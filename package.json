@@ -1,0 +1,40 @@
+{
+    "name": "software-developer-portfolio",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Software Developer Portfolio",
+    "author": "wilbertcargeson",
+    "keywords": [
+        "gatsby"
+    ],
+    "scripts": {
+        "develop": "gatsby develop",
+        "start": "gatsby develop",
+        "build": "gatsby build",
+        "serve": "gatsby serve",
+        "clean": "gatsby clean",
+        "deploy": "gatsby build --prefix-paths && gh-pages -d public -b main"
+    },
+    "dependencies": {
+        "@emotion/react": "^11.6.0",
+        "@emotion/styled": "^11.6.0",
+        "@material-ui/icons": "^4.11.2",
+        "@mui/material": "^5.1.0",
+        "babel-plugin-styled-components": "^1.13.3",
+        "gatsby": "^4.1.3",
+        "gatsby-plugin-image": "^2.1.2",
+        "gatsby-plugin-sass": "^5.1.1",
+        "gatsby-plugin-sharp": "^4.1.3",
+        "gatsby-plugin-styled-components": "^5.1.0",
+        "gatsby-source-filesystem": "^4.1.2",
+        "gatsby-transformer-sharp": "^4.1.0",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "sass": "^1.43.4",
+        "styled-components": "^5.3.3"
+    },
+    "devDependencies": {
+        "gh-pages": "^3.2.3",
+        "prettier": "2.4.1"
+    }
+}

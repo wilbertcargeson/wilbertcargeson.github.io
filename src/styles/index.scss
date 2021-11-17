@@ -1,6 +1,11 @@
-$font-stack: Helvetica, sans-serif;
+@font-face {
+  font-family: 'HeadlandOne-Regular';
+  src: local('HeadlandOne-Regular'), url(../fonts/HeadlandOne-Regular.ttf) format('truetype');
+}
+
+$font-stack: HeadlandOne-Regular;
 $primary-color: #25250C;
-$text-color: white;
+$text-color: #cad593ff;
 
 $bdazzled-blue: #235789ff;
 $yellow-green-crayola: #cad593ff;
@@ -8,35 +13,46 @@ $olive-drab-7: #393a10ff;
 $persimmon: #f45e01ff;
 $old-lavender: #776871ff;
 
+
+
 body {
   font: 100% $font-stack;
   background-color: $primary-color;
   color: $text-color;
+  margin: 0, auto;
 }
 
-h1 {
-    display:flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    font-size: "96px";
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-
 
 .mainRow {
-  vertical-align: middle;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  min-height: 50vh;
 }
 
-.titleText{
-  color: $yellow-green-crayola;
-}
-
-.title{
-  display:flex;
-    align-items: center;
-    text-align: center;
+.mainTitle{
+    align-items: left;
+    text-align: left;
     justify-content: center;
-    padding: 20px;
+    top: 50%;
+    font-size: 48px;
+    vertical-align: center;
 }
+
+.development {
+  vertical-align: bottom;
+}
+
+.download {
+  float: right;
+  margin-top: 3vw;
+  margin-right: 5vw;
+}
+
+

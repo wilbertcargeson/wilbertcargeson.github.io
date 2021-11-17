@@ -1,20 +1,17 @@
 import React, { Suspense } from "react";
 import { useGLTF, OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
-
-function Model() {
-    const { scene } = useGLTF("nosepass.glb");
-    return <primitive object={scene} />;
-}
+import Model from "./Model";
 
 function ShowAvatar(props) {
     return (
         <div style={{ height: "70vh" }}>
-            <Canvas camera={{ position: [400, 400, 400], fov: 1 }}>
-                <ambientLight
-                    color="white"
-                    position={[20, 20, 20]}
-                    intensity={1}
+            <Canvas shadowMap camera={{ position: [-3, 2, 5], fov: 90 }}>
+                <ambientLight intensity={0.3} />
+                <pointLight
+                    castShadow
+                    position={[20, 100, 10]}
+                    intensity={1.2}
                 />
                 <Suspense fallback={null}>
                     <Model />

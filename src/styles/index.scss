@@ -1,0 +1,42 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #25250C;
+$text-color: white;
+
+$bdazzled-blue: #235789ff;
+$yellow-green-crayola: #cad593ff;
+$olive-drab-7: #393a10ff;
+$persimmon: #f45e01ff;
+$old-lavender: #776871ff;
+
+body {
+  font: 100% $font-stack;
+  background-color: $primary-color;
+  color: $text-color;
+}
+
+h1 {
+    display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: "96px";
+}
+
+
+.mainRow {
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+}
+
+.titleText{
+  color: $yellow-green-crayola;
+}
+
+.title{
+  display:flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}

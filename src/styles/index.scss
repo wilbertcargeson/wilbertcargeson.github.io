@@ -35,10 +35,11 @@ body, html, #___gatsby > div, #app, #app>div{
 }
 
 .title {
-  flex:2;
+  position: relative;
   display:flex;
   justify-content: center;
   align-items: center;
+  top:25%
 }
 
 .mainRow {
@@ -49,23 +50,26 @@ body, html, #___gatsby > div, #app, #app>div{
 }
 
 .mainTitle{
-    align-items: left;
-    text-align: left;
-    justify-content: center;
-    top: 50%;
-    font-size: 46px;
-    vertical-align: center;
-    width: 40vw;
+  align-items: left;
+  text-align: left;
+  justify-content: center;
+  top: 50%;
+  font-size: 46px;
+  vertical-align: center;
+  width: 40vw;
 }
 
 .development {
-  vertical-align: baseline;
+  position:absolute;
+  bottom: 0;
+  right:0;  
 }
 
 .download {
-  float: right;
-  margin-top: 3vw;
-  margin-right: 5vw;
+  position:fixed;
+  right:0;
+  padding: 20px;
+  z-index: 9999;
 }
 
 .aboutBackground {
@@ -81,7 +85,7 @@ body, html, #___gatsby > div, #app, #app>div{
 
 .aboutTextContainer {
   width: 40vw;
-  padding-right: 10vw;
+  padding-right: 5vw;
 }
 
 .aboutTextContainer > h1 {

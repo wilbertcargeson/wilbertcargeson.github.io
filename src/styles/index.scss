@@ -4,7 +4,7 @@
 }
 
 $font-stack: HeadlandOne-Regular;
-$primary-color: #25250C;
+$primary-color: #ffffff;
 $text-color: #cad593ff;
 
 $bdazzled-blue: #235789ff;
@@ -12,21 +12,33 @@ $yellow-green-crayola: #cad593ff;
 $olive-drab-7: #393a10ff;
 $persimmon: #f45e01ff;
 $old-lavender: #776871ff;
+$title-color: #0B1B29;
 
 
 
-body {
+body, html, #___gatsby > div, #app, #app>div{
   font: 100% $font-stack;
   background-color: $primary-color;
   color: $text-color;
-  margin: 0, auto;
+}
+
+.titleBackground {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top:0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: $title-color;
 }
 
 .title {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  flex:2;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mainRow {
@@ -41,12 +53,13 @@ body {
     text-align: left;
     justify-content: center;
     top: 50%;
-    font-size: 48px;
+    font-size: 46px;
     vertical-align: center;
+    width: 40vw;
 }
 
 .development {
-  vertical-align: bottom;
+  vertical-align: baseline;
 }
 
 .download {
@@ -54,5 +67,34 @@ body {
   margin-top: 3vw;
   margin-right: 5vw;
 }
+
+.aboutBackground {
+  height: 100vh;
+  width: 100%;
+  left: 0;
+  top: 100vh;
+  position: absolute;
+  background-color: $primary-color;
+  overflow: hidden;
+  color: $bdazzled-blue;
+}
+
+.aboutTextContainer {
+  width: 40vw;
+  padding-right: 10vw;
+}
+
+.aboutTextContainer > h1 {
+  font-size: 72px;
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+  position:relative;
+  justify-content: center;
+  top:25%;
+}
+
 
 

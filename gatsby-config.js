@@ -17,5 +17,18 @@ module.exports = {
             },
             __key: "images",
         },
+
+        {
+            resolve: `gatsby-plugin-manifest`,
+            options: {
+                name: `Wilbert Cargeson Portfolio`,
+                short_name: `WC-Portfolio`,
+                start_url: `/`,
+                background_color: `#f7f0eb`,
+                theme_color: `#a2466c`,
+                display: `standalone`,
+                icon: "src/images/Icon.png",
+            },
+        },
     ],
 };

@@ -11,11 +11,12 @@ const AboutPage = ({ isVisible }) => {
     return (
         <div className="aboutBackground">
             <div className="aboutContainer">
-                <motion.div
+                {/* <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                >
+                > */}
+                <ScrollAnimation animateIn="animate__backInLeft">
                     <div className="aboutTextContainer">
                         <h1>About me</h1>
                         <p>
@@ -36,7 +37,8 @@ const AboutPage = ({ isVisible }) => {
                             <li> 2019 - Software Developer Intern - Shopee </li>
                         </ul>
                     </div>
-                </motion.div>
+                    {/* </motion.div> */}
+                </ScrollAnimation>
                 <img src={myPicture} alt="My Image" height={"400"} />
             </div>
         </div>

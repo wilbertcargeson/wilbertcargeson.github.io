@@ -3,6 +3,8 @@ import { ReactDOM } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import ShowAvatar from "../components/Avatar";
 import DownloadButton from "../components/Download";
+import ScrollAnimation from "react-animate-on-scroll";
+import "animate.css/animate.min.css";
 
 const TitlePage = () => {
     return (
@@ -13,24 +15,20 @@ const TitlePage = () => {
                         Stay tuned! I am still working on this site
                     </p>
                 </div>
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                >
-                    <div className="title">
-                        <div className="mainRow">
+                <div className="title">
+                    <div className="mainRow">
+                        <ScrollAnimation animateIn="animate__bounce">
                             <div className="mainTitle">
                                 <h1>Hi there!</h1>
                                 <h1>I am Wilbert Cargeson</h1>
                             </div>
+                        </ScrollAnimation>
 
-                            <div className="avatarBox">
-                                <ShowAvatar />
-                            </div>
+                        <div className="avatarBox">
+                            <ShowAvatar />
                         </div>
                     </div>
-                </motion.div>
+                </div>
             </div>
         </>
     );

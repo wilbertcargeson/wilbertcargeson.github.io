@@ -16,14 +16,16 @@ const AboutPage = ({ isVisible }) => {
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
                 > */}
-                <ScrollAnimation animateIn="animate__backInLeft">
+                <ScrollAnimation animateIn="animate__fadeInLeft">
                     <div className="aboutTextContainer">
                         <h1>About me</h1>
                         <p>
                             {" "}
-                            A full stack developer, with great interest in game
-                            development and 3D modelling. Likes Pokemon and
-                            volleyball.{" "}
+                            Full stack developer, designed and implemented
+                            various responsive and user-friendly web
+                            applications. Great interest in Game Development, 3D
+                            modelling as well as Artificial Intelligence. Enjoys
+                            Pokemon and Volleyball during his free time.{" "}
                         </p>
                         <br />
                         <hr />

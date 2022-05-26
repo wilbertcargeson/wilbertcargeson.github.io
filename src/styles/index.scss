@@ -5,6 +5,7 @@
 
 $font-stack: HeadlandOne-Regular;
 $primary-color: #ffffff;
+$primary-color2: #f2fff6;
 $text-color: #cad593ff;
 
 $bdazzled-blue: #235789ff;
@@ -12,7 +13,7 @@ $yellow-green-crayola: #cad593ff;
 $olive-drab-7: #393a10ff;
 $persimmon: #f45e01ff;
 $old-lavender: #776871ff;
-$title-color: #0B1B29;
+$title-color: #000000;
 
 
 
@@ -99,4 +100,19 @@ body, html, #___gatsby > div, #app, #app>div{
 }
 
 
+.skillsBackground {
+  height: 100vh;
+  width: 100%;
+  left: 0;
+  top: 200vh;
+  position: absolute;
+  background-color: $primary-color2;
+  overflow: hidden;
+  color: $bdazzled-blue;
+}
 
+.center {
+  position:relative;
+  justify-content: center;
+  top:25%;
+}

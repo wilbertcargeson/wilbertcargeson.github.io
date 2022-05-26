@@ -1,102 +1,58 @@
+$primary-background : #181818;
+
+$neon-blue: #6FDEDE;
+$neon-pink : #FF10F0;
+
+$glowing-color: $neon-blue;
+$glowing-color-glow : lighten($glowing-color, 10%);
+
 @font-face {
-  font-family: 'HeadlandOne-Regular';
-  src: local('HeadlandOne-Regular'), url(../fonts/HeadlandOne-Regular.ttf) format('truetype');
+  font-family: 'OpenSans';
+  src: local('OpenSans'), url(../fonts/OpenSans-VariableFont_wdth\,wght.ttf) format('truetype');
 }
+$font-stack: OpenSans;
 
-$font-stack: HeadlandOne-Regular;
-$primary-color: #ffffff;
-$text-color: #cad593ff;
-
-$bdazzled-blue: #235789ff;
-$yellow-green-crayola: #cad593ff;
-$olive-drab-7: #393a10ff;
-$persimmon: #f45e01ff;
-$old-lavender: #776871ff;
-$title-color: #0B1B29;
-
-
-
-body, html, #___gatsby > div, #app, #app>div{
+html, body {
+  margin: 0;
   font: 100% $font-stack;
-  background-color: $primary-color;
-  color: $text-color;
 }
 
-.titleBackground {
+body{
+  background-color: $primary-background;
+}
+
+.main-page-container{
+  width: 100vw;
   height: 100vh;
-  width: 100%;
   position: absolute;
   left: 0;
-  top:0;
+  top : 0;
+}
+
+.main-border-container {
+  width: 97.5vw;
+  height: 95vh;
+  box-shadow: 
+              0 0 3vw $glowing-color-glow,
+              inset 0 0 1vw $glowing-color-glow,
+              0 0 0 0.5vw $glowing-color;
+  border-radius: 30px;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  background-color: $title-color;
-}
-
-.title {
-  position: relative;
-  display:flex;
-  justify-content: center;
   align-items: center;
-  top:10%
+  justify-content: center;  
+
 }
 
-.mainRow {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  min-height: 50vh;
+h1.helloText{
+  font-weight: 2000;
+  color: $neon-blue;
+  font-size: 7vh;
+  text-shadow: 0vh 0.2vh 0.5vh $glowing-color;
 }
-
-.mainTitle{
-  align-items: left;
-  text-align: left;
-  justify-content: center;
-  top: 50%;
-  font-size: 46px;
-  vertical-align: center;
-  width: 40vw;
-}
-
-.development {
- 
-}
-
-.download {
-  position:fixed;
-  right:0;
-  padding: 20px;
-  z-index: 9999;
-}
-
-.aboutBackground {
-  height: 100vh;
-  width: 100%;
-  left: 0;
-  top: 100vh;
-  position: absolute;
-  background-color: $primary-color;
-  overflow: hidden;
-  color: $bdazzled-blue;
-}
-
-.aboutTextContainer {
-  width: 40vw;
-  padding-right: 5vw;
-}
-
-.aboutTextContainer > h1 {
-  font-size: 72px;
-}
-
-.aboutContainer {
-  display: flex;
-  flex-direction: row;
-  position:relative;
-  justify-content: center;
-  top:25%;
-}
-
-
-

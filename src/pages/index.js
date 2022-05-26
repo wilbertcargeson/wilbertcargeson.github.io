@@ -1,18 +1,18 @@
 import * as React from "react";
 
+import ShowAvatar from "../components/Avatar";
 import "../styles/index.scss";
-
-import Title from "../components/Title";
-import AboutPage from "../components/About";
-import DownloadButton from "../components/Download";
 
 const IndexPage = ({ isVisible }) => {
     return (
         <>
-            <div>
-                <DownloadButton />
-                <Title />
-                <AboutPage />
+            <div className="main-page-container">
+                <div className="main-border-container">
+                    <h1 className="helloText">HELLO</h1>
+                    <div className="avatarBox">
+                        <ShowAvatar />
+                    </div>
+                </div>
             </div>
         </>
     );
